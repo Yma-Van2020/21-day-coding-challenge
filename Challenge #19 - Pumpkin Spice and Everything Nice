@@ -1,0 +1,32 @@
+
+const pumpkinSpice = money => {
+  let pumpPie = 0;
+  let spiceLat = 0;
+  let maca = 0;
+  let spiceCount = 0;
+  let newArr=[]
+  let i = 0;
+  while(money >= 5){
+    money = money -5
+    pumpPie += 1
+    spiceCount += 30
+    i++;
+  }
+  while(money >= 3){
+    money = money -3
+    spiceLat += 1
+    spiceCount += 15
+    i++;
+  }
+  while(money >= 1){
+    money = money -1
+    maca += 1
+    spiceCount += 3
+    i++;
+  }
+  newArr.push(pumpPie)
+  newArr.push(spiceLat)
+  newArr.push(maca)
+  newArr.push(spiceCount)
+  return newArr
+}
