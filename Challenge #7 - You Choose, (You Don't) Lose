@@ -1,0 +1,16 @@
+
+const termTopics = (interviews) => {
+  // Code here!
+ let newArr = [0, 0, 0]
+
+ for(let i = 0; i < interviews.length; i++){
+   if(interviews[i] === "smart city")
+    newArr[0] += 1;
+   if(interviews[i] === "arts funding")
+    newArr[1] += 1;
+   if(interviews[i] === "transportation")
+    newArr[2] += 1;
+ }
+  // Remember to return an array!
+  return newArr
+}
