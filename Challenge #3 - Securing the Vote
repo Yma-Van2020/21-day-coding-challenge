@@ -1,0 +1,32 @@
+const castVote = (name, votes) => {
+  let voteArr=[];
+  if(name === "Tim"){
+    voteArr[0] =votes[0] + 1
+    voteArr[1] =votes[1] 
+    voteArr[2] =votes[2]
+  } else if (name ==="Sally"){
+    voteArr[0] = votes[0] 
+    voteArr[1] =votes[1] + 1
+    voteArr[2] =votes[2]
+  } else if (name === "Beth"){
+    voteArr[0] = votes[0] 
+    voteArr[1] =votes[1] 
+    voteArr[2] =votes[2] + 1
+  }
+  return voteArr
+}
+
+
+
+console.log(castVote('Sally',[
+      0, // Tim
+      2, // Sally
+      1 // Beth
+    ]))
+    
+console.log(castVote('Tim',[
+      1, // Tim
+      1, // Sally
+      2 // Beth
+    ]))
+    
