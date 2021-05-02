@@ -1,0 +1,14 @@
+
+const festivalColours = color1 => {
+  // code here!
+  let splitColor = []
+  if(color1 > 0){
+     splitColor[0] = color1 + 150
+     splitColor[1] = color1 + 210
+    return splitColor
+}}
+
+
+
+
+console.log(festivalColours(100))
