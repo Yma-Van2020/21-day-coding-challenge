@@ -1,0 +1,21 @@
+const countTickets = (tickets) => {
+  var count = {
+    red: 0,
+    green: 0,
+    blue: 0
+  }
+  for (var ticket of tickets) {
+    switch (ticket) {
+      case 'red':
+        count.red++
+        break;
+      case 'green':
+        count.green++
+        break;
+      case 'blue':
+        count.blue++
+        break;
+    }
+  }
+  return count;
+}
