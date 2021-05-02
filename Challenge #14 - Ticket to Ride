@@ -1,0 +1,15 @@
+const dynamicPricing = (numberOfPeople, distanceTraveled) => {
+  // Code here!
+  let price = 0;
+  if(numberOfPeople >= 30){
+    price = (distanceTraveled * 0.25 + 1.25).toFixed(2)
+      return "$" + price
+  } else {
+    price = (distanceTraveled * 0.25 + 1).toFixed(2)
+      return "$" + price
+  }
+}
+
+
+
+console.log(dynamicPricing(15, 10))
