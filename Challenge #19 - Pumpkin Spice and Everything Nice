@@ -7,19 +7,19 @@ const pumpkinSpice = money => {
   let newArr=[]
   let i = 0;
   while(money >= 5){
-    money = money -5
+    money -= 5
     pumpPie += 1
     spiceCount += 30
     i++;
   }
   while(money >= 3){
-    money = money -3
+    money -= 3
     spiceLat += 1
     spiceCount += 15
     i++;
   }
   while(money >= 1){
-    money = money -1
+    money -= 1
     maca += 1
     spiceCount += 3
     i++;
